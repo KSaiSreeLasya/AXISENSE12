@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ArrowRight, Award, Users, Zap } from "lucide-react";
 
@@ -207,13 +208,13 @@ export default function About() {
             Whether you're looking to partner, invest, or explore careers at
             AxiSense.io, we'd love to connect.
           </p>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="btn-primary inline-flex items-center gap-2"
           >
             Get in Touch
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </section>
     </Layout>

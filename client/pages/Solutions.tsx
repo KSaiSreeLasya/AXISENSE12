@@ -181,13 +181,13 @@ export default function Solutions() {
           <p className="text-xl text-muted-foreground mb-8">
             Start with a consultation to understand your unique requirements.
           </p>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="btn-primary inline-flex items-center gap-2"
           >
             Request a Demo
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </section>
     </Layout>

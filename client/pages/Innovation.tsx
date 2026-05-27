@@ -86,9 +86,9 @@ export default function Innovation() {
                   <div className="mt-6 pt-6 border-t border-border">
                     <p className="text-sm text-muted-foreground">
                       Interested in collaboration or partnership?{" "}
-                      <a href="#contact" className="text-primary font-semibold hover:underline">
+                      <Link to="/contact" className="text-primary font-semibold hover:underline">
                         Connect with our R&D team
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -148,13 +148,13 @@ export default function Innovation() {
           <p className="text-xl text-muted-foreground mb-8">
             For investors, partners, and forward-thinking enterprises seeking to shape the future of mobility and energy.
           </p>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="btn-primary inline-flex items-center gap-2"
           >
             Start a Partnership
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </section>
     </Layout>

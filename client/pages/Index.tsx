@@ -136,12 +136,12 @@ export default function Index() {
             Connect with our engineering team to explore how AxiSense.io can
             transform your operations.
           </p>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="inline-block px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors"
           >
             Connect with AxiSense Engineering
-          </a>
+          </Link>
         </div>
       </section>
     </Layout>

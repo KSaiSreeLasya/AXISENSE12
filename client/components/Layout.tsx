@@ -47,12 +47,12 @@ export default function Layout({ children }: LayoutProps) {
               >
                 About
               </Link>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="btn-primary"
               >
                 Contact
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -100,9 +100,9 @@ export default function Layout({ children }: LayoutProps) {
               >
                 About
               </Link>
-              <a href="#contact" className="btn-primary block text-center">
+              <Link to="/contact" className="btn-primary block text-center">
                 Contact
-              </a>
+              </Link>
             </div>
           )}
         </div>
@@ -158,9 +158,9 @@ export default function Layout({ children }: LayoutProps) {
                   </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-background">
+                  <Link to="/contact" className="hover:text-background">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

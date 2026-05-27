@@ -173,13 +173,13 @@ export default function UseCases() {
             Our team will work with you to design a custom integration that
             maximizes your operational value.
           </p>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="btn-primary inline-flex items-center gap-2"
           >
             Schedule a Consultation
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </section>
     </Layout>
