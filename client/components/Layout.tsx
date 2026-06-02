@@ -24,6 +24,12 @@ export default function Layout({ children }: LayoutProps) {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
               <Link
+                to="/"
+                className="text-foreground hover:text-primary transition-colors font-semibold"
+              >
+                Home
+              </Link>
+              <Link
                 to="/solutions"
                 className="text-foreground hover:text-primary transition-colors"
               >
@@ -72,6 +78,13 @@ export default function Layout({ children }: LayoutProps) {
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
             <div className="md:hidden border-t border-border py-4 space-y-4">
+              <Link
+                to="/"
+                className="block text-foreground hover:text-primary transition-colors font-semibold"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
               <Link
                 to="/solutions"
                 className="block text-foreground hover:text-primary transition-colors"

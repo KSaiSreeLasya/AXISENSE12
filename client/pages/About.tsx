@@ -6,9 +6,9 @@ export default function About() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-background to-indigo-50 pt-20 pb-16">
+      <section className="relative bg-gradient-to-br from-background to-indigo-50 pt-20 pb-16 animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl font-bold text-foreground mb-6">
+          <h1 className="text-5xl font-bold text-foreground mb-6 animate-slide-up">
             Engineering the Electric Horizon
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl">
@@ -21,7 +21,7 @@ export default function About() {
       {/* Mission Statement */}
       <section className="py-20 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-12 border border-border">
+          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-12 border border-border animate-slide-up hover:shadow-lg transition-shadow duration-300">
             <h2 className="text-3xl font-bold text-foreground mb-6">Our Mission</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               At AxiSense.io, we operate at the intersection of advanced
@@ -46,12 +46,13 @@ export default function About() {
       {/* Core Values */}
       <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">
+          <h2 className="text-3xl font-bold text-foreground mb-12 text-center animate-fade-in">
             Our Core Values
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl p-8 border border-border">
+            <div className="bg-white rounded-xl p-8 border border-border animate-slide-up hover:shadow-md transition-shadow duration-300"
+              style={{ animationDelay: "100ms" }}>
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                 <Zap className="w-6 h-6 text-blue-600" />
               </div>
@@ -65,7 +66,8 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 border border-border">
+            <div className="bg-white rounded-xl p-8 border border-border animate-slide-up hover:shadow-md transition-shadow duration-300"
+              style={{ animationDelay: "200ms" }}>
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                 <Award className="w-6 h-6 text-purple-600" />
               </div>
@@ -79,7 +81,8 @@ export default function About() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 border border-border">
+            <div className="bg-white rounded-xl p-8 border border-border animate-slide-up hover:shadow-md transition-shadow duration-300"
+              style={{ animationDelay: "300ms" }}>
               <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-6">
                 <Users className="w-6 h-6 text-amber-600" />
               </div>

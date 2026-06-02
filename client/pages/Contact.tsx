@@ -24,8 +24,8 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+    setFormData({ name: "", email: "", company: "", message: "" });
     setTimeout(() => {
-      setFormData({ name: "", email: "", company: "", message: "" });
       setSubmitted(false);
     }, 3000);
   };
@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-background to-blue-50 pt-20 pb-16">
+      <section className="relative bg-gradient-to-br from-background to-blue-50 pt-20 pb-16 animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-bold text-foreground mb-6">
             Get in Touch
@@ -50,7 +50,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-8 animate-slide-up" style={{ animationDelay: "100ms" }}>
               <div>
                 <h2 className="text-2xl font-bold text-foreground mb-8">
                   Contact Information
@@ -133,14 +133,14 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="lg:col-span-2">
-              <div className="bg-white rounded-2xl p-8 border border-border shadow-sm">
+            <div className="lg:col-span-2 animate-slide-up" style={{ animationDelay: "200ms" }}>
+              <div className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-lg transition-shadow duration-300">
                 <h2 className="text-2xl font-bold text-foreground mb-6">
                   Send us a Message
                 </h2>
 
                 {submitted ? (
-                  <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
+                  <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center animate-slide-down">
                     <div className="text-green-600 text-lg font-semibold mb-2">
                       ✓ Message Sent Successfully!
                     </div>
@@ -232,7 +232,7 @@ export default function Contact() {
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      className="w-full btn-primary flex items-center justify-center gap-2"
+                      className="w-full btn-primary flex items-center justify-center gap-2 transition-all duration-200 hover:scale-[1.02] active:scale-95"
                     >
                       <Send className="w-4 h-4" />
                       Send Message
@@ -252,7 +252,7 @@ export default function Contact() {
       {/* FAQ Section */}
       <section className="py-20 bg-blue-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-foreground mb-12 text-center">
+          <h2 className="text-3xl font-bold text-foreground mb-12 text-center animate-fade-in">
             Frequently Asked Questions
           </h2>
 
@@ -275,7 +275,11 @@ export default function Contact() {
                 a: "We're SOC 2 Type II certified with military-grade encryption, end-to-end data protection, and compliance with GDPR, HIPAA, and automotive data standards.",
               },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-lg p-6 border border-border">
+              <div
+                key={i}
+                className="bg-white rounded-lg p-6 border border-border animate-slide-up hover:shadow-md transition-shadow duration-300"
+                style={{ animationDelay: `${i * 100}ms` }}
+              >
                 <h3 className="text-lg font-semibold text-foreground mb-3">
                   {item.q}
                 </h3>
@@ -288,7 +292,7 @@ export default function Contact() {
 
       {/* Final CTA */}
       <section className="py-20 bg-background">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
           <h2 className="text-3xl font-bold text-foreground mb-4">
             Ready to accelerate?
           </h2>
