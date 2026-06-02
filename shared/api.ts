@@ -10,3 +10,18 @@
 export interface DemoResponse {
   message: string;
 }
+
+export interface ContactSubmission {
+  id?: string;
+  name: string;
+  email: string;
+  company: string;
+  message: string;
+  submitted_at?: string;
+}
+
+export interface ContactResponse {
+  success: boolean;
+  message: string;
+  id?: string;
+}
