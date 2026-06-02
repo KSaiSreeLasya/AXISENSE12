@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: axisense-website
+    env: node
+    plan: free
+    
+    buildCommand: pnpm install && pnpm build
+    startCommand: pnpm start
+    
+    envVars:
+      - key: VITE_PUBLIC_BUILDER_KEY
+        value: __BUILDER_PUBLIC_KEY__
+      - key: VITE_PUBLIC_SUPABASE_URL
+        value: https://zmdmpwzdcdngefcwepbg.supabase.co
+      - key: VITE_PUBLIC_SUPABASE_ANON_KEY
+        scope: secret
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InptZG1wd3pkY2RuZ2VmY3dlcGJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAzOTI5MTEsImV4cCI6MjA5NTk2ODkxMX0.RcGBvUoETHAk-H0IpvZQcruUEpNHFdT8M7hXeIqG9gE
+      - key: PING_MESSAGE
+        value: ping pong
