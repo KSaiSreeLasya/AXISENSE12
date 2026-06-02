@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import { Mail, Phone, MapPin, Send, AlertCircle } from "lucide-react";
-import { ContactResponse } from "@shared/api";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -11,8 +10,6 @@ export default function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -24,38 +21,13 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setError(null);
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data: ContactResponse = await response.json();
-
-      if (!response.ok) {
-        setError(data.message || "Failed to send message");
-        setLoading(false);
-        return;
-      }
-
-      setSubmitted(true);
-      setFormData({ name: "", email: "", company: "", message: "" });
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 3000);
-    } catch (err) {
-      setError(
-        err instanceof Error ? err.message : "Failed to send message"
-      );
-    } finally {
-      setLoading(false);
-    }
+    setSubmitted(true);
+    setFormData({ name: "", email: "", company: "", message: "" });
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 3000);
   };
 
   return (
@@ -178,17 +150,6 @@ export default function Contact() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
-                    {error && (
-                      <div className="bg-red-50 border border-red-200 rounded-lg p-4 flex gap-3 animate-slide-down">
-                        <AlertCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
-                        <div>
-                          <p className="text-red-700 text-sm font-semibold">
-                            Error
-                          </p>
-                          <p className="text-red-600 text-sm">{error}</p>
-                        </div>
-                      </div>
-                    )}
                     {/* Name */}
                     <div>
                       <label
