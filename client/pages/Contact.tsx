@@ -232,11 +232,10 @@ export default function Contact() {
                     {/* Submit Button */}
                     <button
                       type="submit"
-                      disabled={loading}
-                      className="w-full btn-primary flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200 hover:scale-[1.02] active:scale-95"
+                      className="w-full btn-primary flex items-center justify-center gap-2 transition-all duration-200 hover:scale-[1.02] active:scale-95"
                     >
-                      <Send className={`w-4 h-4 ${loading ? "animate-spin" : ""}`} />
-                      {loading ? "Sending..." : "Send Message"}
+                      <Send className="w-4 h-4" />
+                      Send Message
                     </button>
 
                     <p className="text-sm text-muted-foreground text-center">
