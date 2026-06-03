@@ -145,9 +145,9 @@ export default function Contact() {
                     Headquarters
                   </h3>
                   <p className="text-muted-foreground">
-                    Sy No 2, Plot No. 148, beside Srikara Hospitals, Mythri Nagar, Hafeezpet, Madeenaguda,
+                    Sy No 2, Plot No. 148, beside Srikara Hospitals, Mythri Nagar, Hafeezpet, Madeenaguda,Hyderabad,
                     <br />
-                     Hyderabad, Telangana 500049
+                    Telangana 500049
                   </p>
                 </div>
               </div>
