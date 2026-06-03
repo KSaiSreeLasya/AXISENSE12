@@ -129,7 +129,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="mb-6">
-                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F982260fd9bcd4f70ac81cf7c0e0d87a4?format=webp&width=1600&height=2400" alt="AxiSense" className="w-16 h-16" />
+                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F210548a5ec254420bbcb051031939476?format=webp&width=1600&height=1200" alt="AxiSense.io" className="h-12" />
               </div>
               <p className="text-foreground/70 text-sm">
                 The digital nervous system for the energy transition.
