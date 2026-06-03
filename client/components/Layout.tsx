@@ -16,9 +16,9 @@ export default function Layout({ children }: LayoutProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F982260fd9bcd4f70ac81cf7c0e0d87a4?format=webp&width=800&height=1200" alt="AxiSense" className="w-12 h-12" />
-              <span className="text-xl font-bold text-foreground">AxiSense</span>
+            <Link to="/" className="flex items-center gap-3">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F982260fd9bcd4f70ac81cf7c0e0d87a4?format=webp&width=1600&height=2400" alt="AxiSense" className="w-14 h-14" />
+              <span className="text-sm font-semibold text-foreground">AxiSense.io</span>
             </Link>
 
             {/* Desktop Navigation */}
