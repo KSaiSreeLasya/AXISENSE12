@@ -125,10 +125,10 @@ export default function Contact() {
                     Phone
                   </h3>
                   <a
-                    href="tel:+1-555-123-4567"
+                    href="tel:+91-8247223629"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (555) 123-4567
+                    +91-8247223629
                   </a>
                 </div>
               </div>
@@ -145,9 +145,9 @@ export default function Contact() {
                     Headquarters
                   </h3>
                   <p className="text-muted-foreground">
-                    San Francisco, CA
+                    Sy No 2, Plot No. 148, beside Srikara Hospitals, Mythri Nagar, Hafeezpet, Madeenaguda,
                     <br />
-                    United States
+                     Hyderabad, Telangana 500049
                   </p>
                 </div>
               </div>
