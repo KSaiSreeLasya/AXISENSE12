@@ -125,21 +125,20 @@ export default function Layout({ children }: LayoutProps) {
       <main className="flex-1">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-foreground text-background py-16">
+      <footer className="bg-white text-foreground py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F982260fd9bcd4f70ac81cf7c0e0d87a4?format=webp&width=800&height=1200" alt="AxiSense" className="w-8 h-8" />
-                <span className="font-bold text-lg">AxiSense</span>
+              <div className="mb-6">
+                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F982260fd9bcd4f70ac81cf7c0e0d87a4?format=webp&width=1600&height=2400" alt="AxiSense" className="w-16 h-16" />
               </div>
-              <p className="text-background/80 text-sm">
+              <p className="text-foreground/70 text-sm">
                 The digital nervous system for the energy transition.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Product</h3>
-              <ul className="space-y-2 text-sm text-background/80">
+              <h3 className="font-semibold mb-4 text-foreground">Product</h3>
+              <ul className="space-y-2 text-sm text-foreground/70">
                 <li>
                   <Link to="/solutions" className="hover:text-background">
                     Solutions
@@ -158,8 +157,8 @@ export default function Layout({ children }: LayoutProps) {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm text-background/80">
+              <h3 className="font-semibold mb-4 text-foreground">Company</h3>
+              <ul className="space-y-2 text-sm text-foreground/70">
                 <li>
                   <Link to="/about" className="hover:text-background">
                     About
@@ -178,8 +177,8 @@ export default function Layout({ children }: LayoutProps) {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Legal</h3>
-              <ul className="space-y-2 text-sm text-background/80">
+              <h3 className="font-semibold mb-4 text-foreground">Legal</h3>
+              <ul className="space-y-2 text-sm text-foreground/70">
                 <li>
                   <a href="#privacy" className="hover:text-background">
                     Privacy
@@ -194,8 +193,8 @@ export default function Layout({ children }: LayoutProps) {
             </div>
           </div>
 
-          <div className="border-t border-background/20 pt-8">
-            <p className="text-center text-sm text-background/80">
+          <div className="border-t border-foreground/20 pt-8">
+            <p className="text-center text-sm text-foreground/70">
               © 2026 AxiSense.io. All Rights Reserved.
             </p>
           </div>
