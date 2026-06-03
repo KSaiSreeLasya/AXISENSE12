@@ -125,10 +125,10 @@ export default function Contact() {
                     Phone
                   </h3>
                   <a
-                    href="tel:+1-555-123-4567"
+                    href="tel:+91-8247223629"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (555) 123-4567
+                    +91-8247223629
                   </a>
                 </div>
               </div>
@@ -145,9 +145,9 @@ export default function Contact() {
                     Headquarters
                   </h3>
                   <p className="text-muted-foreground">
-                    San Francisco, CA
+                    Sy No 2, Plot No. 148, beside Srikara Hospitals, Mythri Nagar, Hafeezpet, Madeenaguda,Hyderabad,
                     <br />
-                    United States
+                    Telangana 500049
                   </p>
                 </div>
               </div>
@@ -279,6 +279,22 @@ export default function Contact() {
                   </form>
                 )}
               </div>
+            </div>
+          </div>
+
+          {/* Map Section - Full Width */}
+          <div className="mt-12 animate-slide-up" style={{ animationDelay: "300ms" }}>
+            <div className="rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.3045241898153!2d78.34556287493729!3d17.492970783412304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93860329a3f3%3A0x8882b1be660002ad!2sAxigear%20Electric%20Lounge!5e0!3m2!1sen!2sin!4v1780483642219!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="AxiSense.io Location"
+              ></iframe>
             </div>
           </div>
         </div>

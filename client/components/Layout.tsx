@@ -16,9 +16,8 @@ export default function Layout({ children }: LayoutProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg"></div>
-              <span className="text-xl font-bold text-foreground">AxiSense</span>
+            <Link to="/" className="flex items-center">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F210548a5ec254420bbcb051031939476?format=webp&width=1600&height=1200" alt="AxiSense.io" className="h-12" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -125,21 +124,20 @@ export default function Layout({ children }: LayoutProps) {
       <main className="flex-1">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-foreground text-background py-16">
+      <footer className="bg-white text-foreground py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-6 h-6 bg-gradient-to-br from-blue-400 to-purple-500 rounded"></div>
-                <span className="font-bold text-lg">AxiSense</span>
+              <div className="mb-6">
+                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F210548a5ec254420bbcb051031939476?format=webp&width=1600&height=1200" alt="AxiSense.io" className="h-12" />
               </div>
-              <p className="text-background/80 text-sm">
+              <p className="text-foreground/70 text-sm">
                 The digital nervous system for the energy transition.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Product</h3>
-              <ul className="space-y-2 text-sm text-background/80">
+              <h3 className="font-semibold mb-4 text-foreground">Product</h3>
+              <ul className="space-y-2 text-sm text-foreground/70">
                 <li>
                   <Link to="/solutions" className="hover:text-background">
                     Solutions
@@ -158,8 +156,8 @@ export default function Layout({ children }: LayoutProps) {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm text-background/80">
+              <h3 className="font-semibold mb-4 text-foreground">Company</h3>
+              <ul className="space-y-2 text-sm text-foreground/70">
                 <li>
                   <Link to="/about" className="hover:text-background">
                     About
@@ -178,8 +176,8 @@ export default function Layout({ children }: LayoutProps) {
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Legal</h3>
-              <ul className="space-y-2 text-sm text-background/80">
+              <h3 className="font-semibold mb-4 text-foreground">Legal</h3>
+              <ul className="space-y-2 text-sm text-foreground/70">
                 <li>
                   <a href="#privacy" className="hover:text-background">
                     Privacy
@@ -194,8 +192,8 @@ export default function Layout({ children }: LayoutProps) {
             </div>
           </div>
 
-          <div className="border-t border-background/20 pt-8">
-            <p className="text-center text-sm text-background/80">
+          <div className="border-t border-foreground/20 pt-8">
+            <p className="text-center text-sm text-foreground/70">
               © 2026 AxiSense.io. All Rights Reserved.
             </p>
           </div>

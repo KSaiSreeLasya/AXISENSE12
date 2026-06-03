@@ -45,10 +45,12 @@ export function createServer() {
   app.get("/api/demo", handleDemo);
   app.post("/api/contact", handleContactSubmission);
 
-  // SPA fallback - serve index.html for all non-API routes
-  app.get("*", (_req, res) => {
-    res.sendFile(path.join(__dirname, "../dist/spa/index.html"));
-  });
+  // SPA fallback - serve index.html for all non-API routes (production only)
+  if (process.env.NODE_ENV === "production") {
+    app.use((_req, res) => {
+      res.sendFile(path.join(__dirname, "../dist/spa/index.html"));
+    });
+  }
 
   return app;
 }
