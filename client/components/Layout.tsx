@@ -17,7 +17,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg"></div>
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F982260fd9bcd4f70ac81cf7c0e0d87a4?format=webp&width=800&height=1200" alt="AxiSense" className="w-8 h-8" />
               <span className="text-xl font-bold text-foreground">AxiSense</span>
             </Link>
 
@@ -130,7 +130,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-6 h-6 bg-gradient-to-br from-blue-400 to-purple-500 rounded"></div>
+                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd6ed3a58ddbf4178909cabbd3ef86178%2F982260fd9bcd4f70ac81cf7c0e0d87a4?format=webp&width=800&height=1200" alt="AxiSense" className="w-6 h-6" />
                 <span className="font-bold text-lg">AxiSense</span>
               </div>
               <p className="text-background/80 text-sm">
