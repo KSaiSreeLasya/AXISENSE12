@@ -7,10 +7,24 @@ const port = process.env.PORT || 3000;
 
 // In production, serve the built SPA files
 const __dirname = import.meta.dirname;
-const distPath = path.join(__dirname, "../spa");
+const distPath = path.join(__dirname, "../dist/spa");
 
-// Serve static files
-app.use(express.static(distPath));
+// Serve static files with correct MIME types
+app.use(express.static(distPath, {
+  setHeaders: (res, filepath) => {
+    if (filepath.endsWith(".js")) {
+      res.setHeader("Content-Type", "application/javascript");
+    } else if (filepath.endsWith(".css")) {
+      res.setHeader("Content-Type", "text/css");
+    } else if (filepath.endsWith(".json")) {
+      res.setHeader("Content-Type", "application/json");
+    } else if (filepath.endsWith(".svg")) {
+      res.setHeader("Content-Type", "image/svg+xml");
+    } else if (filepath.endsWith(".woff") || filepath.endsWith(".woff2")) {
+      res.setHeader("Content-Type", "font/woff2");
+    }
+  },
+}));
 
 // Handle React Router - serve index.html for all non-API routes
 app.get("*", (req, res) => {

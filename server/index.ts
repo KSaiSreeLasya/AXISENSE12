@@ -16,10 +16,27 @@ export function createServer() {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
-  // Serve static files from dist/spa
-  app.use(express.static(path.join(__dirname, "../dist/spa")));
+  // Set MIME types for static assets
+  app.set("view engine", "html");
 
-  // Example API routes
+  // Serve static files from dist/spa with correct MIME types
+  app.use(express.static(path.join(__dirname, "../dist/spa"), {
+    setHeaders: (res, filepath) => {
+      if (filepath.endsWith(".js")) {
+        res.setHeader("Content-Type", "application/javascript");
+      } else if (filepath.endsWith(".css")) {
+        res.setHeader("Content-Type", "text/css");
+      } else if (filepath.endsWith(".json")) {
+        res.setHeader("Content-Type", "application/json");
+      } else if (filepath.endsWith(".svg")) {
+        res.setHeader("Content-Type", "image/svg+xml");
+      } else if (filepath.endsWith(".woff") || filepath.endsWith(".woff2")) {
+        res.setHeader("Content-Type", "font/woff2");
+      }
+    },
+  }));
+
+  // API routes
   app.get("/api/ping", (_req, res) => {
     const ping = process.env.PING_MESSAGE ?? "ping";
     res.json({ message: ping });
