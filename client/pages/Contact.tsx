@@ -2,8 +2,16 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { supabase } from "@/lib/supabase";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function Contact() {
+  useSEO({
+    title: "AxiSense | Intelligent Technology Solutions",
+    description: "From analytics to automation, Axisense provides innovative technology solutions that streamline operations and support business success.",
+    canonical: "https://axisense.io/contact",
+    ogTitle: "AxiSense | Intelligent Technology Solutions",
+    ogDescription: "From analytics to automation, Axisense provides innovative technology solutions that streamline operations and support business success.",
+  });
   const [formData, setFormData] = useState({
     name: "",
     email: "",

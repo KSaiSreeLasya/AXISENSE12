@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ArrowRight, Award, Users, Zap } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function About() {
+  useSEO({
+    title: "AxiSense | Smart Analytics for Smarter Businesses",
+    description: "Axisense helps organizations unlock valuable insights through AI-powered analytics, intelligent automation, and innovative technology solutions.",
+    canonical: "https://axisense.io/about",
+    ogTitle: "AxiSense | Smart Analytics for Smarter Businesses",
+    ogDescription: "Axisense helps organizations unlock valuable insights through AI-powered analytics, intelligent automation, and innovative technology solutions.",
+  });
   return (
     <Layout>
       {/* Hero */}

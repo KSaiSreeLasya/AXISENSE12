@@ -1,8 +1,31 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ArrowRight, Zap, Shield, BarChart3 } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
+import { useStructuredData } from "@/hooks/useStructuredData";
 
 export default function Index() {
+  useSEO({
+    title: "AxiSense | AI-Powered Analytics & Smart Solutions",
+    description: "Axisense delivers innovative AI, analytics, automation, and digital solutions that help businesses improve efficiency, gain insights, and drive sustainable growth.",
+    canonical: "https://axisense.io/",
+    ogTitle: "AxiSense | AI-Powered Analytics & Smart Solutions",
+    ogDescription: "Axisense delivers innovative AI, analytics, automation, and digital solutions that help businesses improve efficiency, gain insights, and drive sustainable growth.",
+  });
+
+  useStructuredData({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Axisense',
+    url: 'https://axisense.io',
+    logo: 'https://axisense.io/logo.png',
+    description: 'Axisense delivers innovative AI, analytics, automation, and digital solutions',
+    sameAs: [
+      'https://linkedin.com/company/axisense',
+      'https://twitter.com/axisense',
+    ],
+  });
+
   return (
     <Layout>
       {/* Hero Section */}
