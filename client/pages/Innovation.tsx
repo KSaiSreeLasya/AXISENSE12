@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ArrowRight, Zap, Brain, Cpu, Lock } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function Innovation() {
+  useSEO({
+    title: "AxiSense | Advanced AI & Digital Transformation Solutions",
+    description: "Explore cutting-edge AI, machine learning, analytics, and digital transformation services that help businesses stay ahead in a competitive market.",
+    canonical: "https://axisense.io/innovation",
+    ogTitle: "AxiSense | Advanced AI & Digital Transformation Solutions",
+    ogDescription: "Explore cutting-edge AI, machine learning, analytics, and digital transformation services that help businesses stay ahead in a competitive market.",
+  });
   const innovations = [
     {
       icon: Zap,

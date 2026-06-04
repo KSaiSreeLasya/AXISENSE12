@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ArrowRight, Zap, Shield, BarChart3, Cpu, TrendingUp } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function Solutions() {
+  useSEO({
+    title: "AxiSense | Business Intelligence, AI & Automation",
+    description: "Empower your organization with advanced AI technologies, business intelligence tools, and automation solutions tailored for modern business challenges.",
+    canonical: "https://axisense.io/solutions",
+    ogTitle: "AxiSense | Business Intelligence, AI & Automation",
+    ogDescription: "Empower your organization with advanced AI technologies, business intelligence tools, and automation solutions tailored for modern business challenges.",
+  });
   const solutions = [
     {
       icon: Zap,

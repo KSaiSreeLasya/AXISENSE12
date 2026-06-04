@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { ArrowRight, Truck, Zap, Network } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function UseCases() {
+  useSEO({
+    title: "AxiSense | Data-Driven Innovation for Business Growth",
+    description: "Leverage the power of data analytics, artificial intelligence, and digital transformation services to accelerate growth and improve decision-making.",
+    canonical: "https://axisense.io/use-cases",
+    ogTitle: "AxiSense | Data-Driven Innovation for Business Growth",
+    ogDescription: "Leverage the power of data analytics, artificial intelligence, and digital transformation services to accelerate growth and improve decision-making.",
+  });
   const useCases = [
     {
       icon: Truck,

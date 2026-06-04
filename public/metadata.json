@@ -1,0 +1,39 @@
+{
+  "site": {
+    "name": "Axisense",
+    "url": "https://axisense.io",
+    "logo": "https://axisense.io/logo.png",
+    "description": "Axisense delivers innovative AI, analytics, automation, and digital solutions",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/company/axisense",
+      "twitter": "https://twitter.com/axisense"
+    }
+  },
+  "pages": {
+    "/": {
+      "title": "AxiSense | AI-Powered Analytics & Smart Solutions",
+      "description": "Axisense delivers innovative AI, analytics, automation, and digital solutions that help businesses improve efficiency, gain insights, and drive sustainable growth.",
+      "keywords": ["AI", "analytics", "automation", "digital solutions", "business intelligence"]
+    },
+    "/solutions": {
+      "title": "AxiSense | Business Intelligence, AI & Automation",
+      "description": "Empower your organization with advanced AI technologies, business intelligence tools, and automation solutions tailored for modern business challenges."
+    },
+    "/innovation": {
+      "title": "AxiSense | Advanced AI & Digital Transformation Solutions",
+      "description": "Explore cutting-edge AI, machine learning, analytics, and digital transformation services that help businesses stay ahead in a competitive market."
+    },
+    "/use-cases": {
+      "title": "AxiSense | Data-Driven Innovation for Business Growth",
+      "description": "Leverage the power of data analytics, artificial intelligence, and digital transformation services to accelerate growth and improve decision-making."
+    },
+    "/about": {
+      "title": "AxiSense | Smart Analytics for Smarter Businesses",
+      "description": "Axisense helps organizations unlock valuable insights through AI-powered analytics, intelligent automation, and innovative technology solutions."
+    },
+    "/contact": {
+      "title": "AxiSense | Intelligent Technology Solutions",
+      "description": "From analytics to automation, Axisense provides innovative technology solutions that streamline operations and support business success."
+    }
+  }
+}
