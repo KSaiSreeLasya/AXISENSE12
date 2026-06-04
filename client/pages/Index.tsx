@@ -37,7 +37,7 @@ export default function Index() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-normal">
               AxiSense.io
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                 The Digital Nervous System
